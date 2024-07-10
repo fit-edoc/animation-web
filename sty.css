@@ -1,0 +1,493 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body , html {
+    
+    height: 100vh;
+    width: 100%;
+    
+}
+#main{
+    height:100vh ;
+    width: 100%;
+    
+}
+#nav{
+    height: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.233);
+    backdrop-filter: blur(12px);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#bar1 img{
+    height: 50px;
+    cursor: pointer;
+
+}
+#op:hover{
+    opacity: 0.5
+    ;
+}
+
+#bar3  {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-around;
+    height: 100px;
+    width: 33.3%;
+    
+}
+#bar3 a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 800;
+}
+#bar3  :last-child{
+    margin-left: 40px;
+}
+#bar2{
+    height: 100px;
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    
+}
+#bar2 input{
+
+    height: 30px;
+    width: 50%;
+    border-radius: 10px;
+}
+#content{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    
+
+}
+#first{
+    height: 100vh;
+    width: 40%;
+    z-index: -1;
+    position: relative;
+    background:linear-gradient(blue,white)
+}
+#first img {
+    height: 100%;
+    width: 130%;
+    top: 20%;
+    left: 10%;
+    
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+}
+
+#sec{
+    height: 100vh;
+    width: 40%;
+    z-index: -1;
+    position: relative;
+    background-image: url(ola.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#sec img{
+    height: 70%;
+    top: 40%;
+    left: 60%;
+    position: absolute;
+}
+#sec h1{
+    text-align: center;
+    font-family: wire one;
+    font-size: 10vw;
+    color: #080808;
+    position: absolute;
+    top: 15%;
+    
+}
+#sec p{
+    font-size: 2vw;
+    
+    color: rgba(6, 11, 13, 0.523);
+    font-family:cursive;
+    padding: 24% 22%;
+
+}
+#third{
+    height: 100vh;
+    width: 20%;
+    z-index: -2;
+    background-color: rgba(0, 119, 255, 0.322);
+}
+#secondpage{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+
+  
+}
+#f{
+    height: 100vh;
+    width: 50%;
+    border-radius: 10px;
+   
+    background-image: linear-gradient(
+        135deg,
+        hsl(0deg 6% 59%) 0%,
+        hsl(357deg 7% 61%) 6%,
+        hsl(354deg 8% 63%) 10%,
+        hsl(351deg 9% 65%) 13%,
+        hsl(349deg 10% 67%) 16%,
+        hsl(346deg 11% 70%) 19%,
+        hsl(342deg 12% 72%) 22%,
+        hsl(339deg 14% 74%) 25%,
+        hsl(335deg 15% 76%) 29%,
+        hsl(332deg 17% 78%) 34%,
+        hsl(327deg 18% 80%) 40%,
+        hsl(323deg 20% 82%) 47%,
+        hsl(318deg 22% 84%) 55%,
+        hsl(312deg 25% 86%) 66%,
+        hsl(305deg 28% 88%) 81%,
+        hsl(296deg 35% 90%) 100%
+      );
+      
+      
+    z-index: 2;
+   
+}
+#s{
+    height: 100vh;
+    width: 50%;
+    z-index: 2;
+    /* background-color: rgba(184, 135, 11, 0.308); */
+    
+} 
+#s h1 {
+    color: rgb(18, 3, 3);
+    font-size: 5vw;
+    padding: 0px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-right: 50px;
+   
+}
+#s h1:nth-child(even){
+    color: rgb(164, 43, 43);
+    
+}
+
+#vid {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#vid  video{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    opacity: 0.9;
+    transform: translate(-50%,-40%);
+    height: 70vh;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10%;
+    
+}
+
+#page3{
+    height: 100vh;
+    position: relative;
+    min-width: 100%;
+    
+   
+}
+#center{
+    height: 70vh;
+    position: absolute;
+    top: 10%;
+    
+   max-width: 100%;
+    
+    white-space: nowrap;
+  
+}
+#Box{
+    height: 70%;
+    border-radius: 20px;
+    display: inline-block;
+    border: 2px rgb(12, 12, 12) solid;
+    width: 55vh;
+    backdrop-filter: blur(3px);
+    background-color: rgba(8, 193, 249, 0.422);
+}
+#center::-webkit-scrollbar{
+    display: none;
+}
+#Box button{
+    height: 50px;
+    
+    width: 100px;
+    backdrop-filter: blur(30px);
+    font-size: 1vw;
+    background-color: rgba(255, 255, 255, 0.356);
+    color: rgb(14, 13, 13);
+    border-radius: 50px;
+    position: absolute;
+    top:80%;
+    text-transform: capitalize;
+    margin: 10px;
+    margin-left: 10%;
+    cursor: pointer;
+    
+}
+button::before{
+    content: "";
+    width: 100%;
+    left: -2px;
+    top: -3px;
+    border: 2px solid black;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    background-color: rgba(255, 0, 0, 0.192);
+    height: 100%;
+}
+button:hover::before{
+    z-index: -1;
+    border-width: 2px rgb(0, 255, 140);
+    box-shadow: inset 20px 40px 70px white,inset 40px 40px 20px black;
+    opacity: 1;
+    font-size: 3.5vw;
+    background-color: rgba(0, 255, 255, 0.224);
+}
+#Box img{
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#select{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 45%;
+    top: 65%;
+    
+}
+#pagal1{
+    height: 50px;
+    width: 100px;
+    font-size: 2vw;
+    left: 50%;
+    border-radius: 50px;
+}
+#pagal1:active{
+    background-color: rgba(21, 3, 3, 0.368);
+}
+
+#pagal{
+    height: 50px;
+    width: 100px;
+    font-size: 2vw;
+    left: 50%;
+    border-radius: 50px;
+}
+#pagal:active{
+    background-color: rgba(21, 3, 3, 0.368);
+}
+
+
+
+
+
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    background-size: 5%;
+    background-position: 10%;
+    background:url(in.jpg)
+}
+#photos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 20px;
+    place-items: center;
+    
+    overflow:visible;
+}
+#col{
+    height: 300px;
+    width:300px;
+    
+    margin: 20px;
+    border-radius: 10px;
+   
+}
+#col video{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#page5{
+   height:120vh;
+    width: 100%;
+    
+}
+#top{
+    height: 65%;
+    width: 100%;
+    background-color: rgb(51, 41, 238);
+}
+#bottom{
+    display: flex;
+    height: calc(100% - 55%);
+    width: 100%;
+    background-color: black;
+}
+#firstt{
+    height: 100%;
+    width: 33.3%;
+   
+    justify-content: space-evenly;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+}
+#firstt a {
+    text-decoration: none;
+    color: gray;
+}
+#firstt a:first-child{
+    color: whitesmoke;
+    font-size: 1.5vw;
+}
+#firstt a:nth-child(odd):hover{
+    color: whitesmoke;
+}
+#firstt a:nth-child(even):hover{
+    color: whitesmoke;
+}
+#fisrtt h4 {
+    color: #db1a1a;
+}
+#last{
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    
+    
+}
+#last h4 , i {
+    padding: 3px;
+    color: whitesmoke;
+
+}
+#second {
+    height: 100%;
+    width: 33.3%;
+
+    justify-content: space-evenly;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+}
+#second a {
+    text-decoration: none;
+    color: gray;
+}
+#second a:first-child{
+    color: whitesmoke;
+    font-size: 1.5vw;
+}
+#second a:nth-child(odd){
+    color: rgb(253, 250, 250);
+}
+#fisrtt h4 {
+    color: #db1a1a;
+}
+#last{
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    
+    
+}
+#last h4 , i {
+    padding: 3px;
+    color: whitesmoke;
+
+}
+#thirdd{
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    align-items: flex-end;
+    
+    
+    
+   
+}
+#thirdd i{
+    color: rgb(64, 40, 40);
+    font-size: 3vw;
+    margin: 20px;
+    margin-bottom: 80px;
+    height: 50px;
+    gap: 30px;
+    width: 55px;
+    border-radius: 50%;
+    text-align: center;
+
+
+    
+}
+#thirdd i:hover{
+    color: whitesmoke;
+    background-color: rebeccapurple;
+}
+#top img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+
